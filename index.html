@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Assignment</title>
+    <script
+      src="https://kit.fontawesome.com/c0abd5e78b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="images/logo.png" alt="logo" />
+      <form class="search-bar">
+        <input type="text" name="search" placeholder="Search..." />
+        <button type="submit">
+          <img src="images/search.png" alt="searchicon" />
+        </button>
+      </form>
+      <div class="nav-links">
+        <div class="profile">
+          <img src="images/avatar.png" width="20px" height="20px" />
+          <p>Login</p>
+        </div>
+        <div class="cart">
+          <img src="images/shopping-cart.png" width="20px" height="20px" />
+          <span class="quantity" id="quantity">1</span>
+          <p id="total-price">30,00 kr</p>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="sidebar-right"></div>
+      <div class="sidebar-left"></div>
+      <main class="main">
+        <div class="mainsection-1">
+          <ul>
+            <li>
+              <a href="#">Reservedele & Tilbehør</a><i class="arrow right"></i>
+            </li>
+            <li><a href="#">Skilte til anlæg</a><i class="arrow right"></i></li>
+            <li>
+              <a href="#">Skilte til postkasse </a><i class="arrow right"></i>
+            </li>
+            <li><a href="#">Andet skilte</a><i class="arrow right"></i></li>
+          </ul>
+        </div>
+        <div class="mainsection-2 mainsection">
+          <ul>
+            <li><a href="#">Forside/</a></li>
+            <li><a href="#">Skilte til anlæg/</a></li>
+            <li><a href="#">Serie 4000/</a></li>
+            <li><a class="link-3" href="#">Videx Skilt 42 * 12 mm</a></li>
+          </ul>
+          <div class="product-items">
+            <h6>4TH <span>LARSOLAFSSON</span></h6>
+            <h6>4TH <span>MARIAOLAFSSON</span></h6>
+          </div>
+          <div class="varenummer">
+            <p>varenummer:sk42*12</p>
+          </div>
+        </div>
+        <div class="mainsection-3 mainsection">
+          <h4>Videx Skilt 42 * 12 mm</h4>
+          <p>
+            Skiltet laves i et plast materiale(Resopal) på 0,5mm hvor navnet
+            gaveres ned i.<br />
+            Skiltet fås i farverne Sort m. hvid skrift el. Hvid m.sort skrift<br />
+            Skilte str.:42mm * 12mm (videx serie 4000) - m.3mm skrift
+          </p>
+          <div>
+            <p>Vælg farve:</p>
+            <div class="farve">
+              <p class="black-box"></p>
+              <p class="white-box"></p>
+            </div>
+          </div>
+          <div class="Linje">
+            <p>Linje 1:</p>
+            <div class="linje1">
+              <p class="linje-para1">4TH</p>
+              <p class="linje-para2">LARS OLAFSSON</p>
+            </div>
+            <p>Linje 2:</p>
+            <div class="linje2">
+              <p class="linje-para1">4TH</p>
+              <p class="linje-para2">MARIA OLAFSSON</p>
+            </div>
+          </div>
+          <div class="price-section">
+            <div class="price">
+              <h3>30,00 kr.</h3>
+              <p>24,00 kr.ekskl. moms</p>
+            </div>
+            <div class="product-qty">
+              <button class="btn" onclick="productCount(false)">-</button>
+              <input value="1" id="input" />
+              <!-- <span id="quantity">1</span> -->
+              <button class="btn" onclick="productCount(true)">+</button>
+            </div>
+            <div class="product-qty-button">
+              <button class="btn btn-buy" id="buy">
+                <img
+                  src="images/shopping-cart.png"
+                  width="20px"
+                  height="20px"
+                />
+                <span>Køb</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <p class="power">Powered by</p>
+            <p class="orderstep">orderstep</p>
+          </div>
+          <div class="footer-col">
+            <h4>KONTAKT</h4>
+            <ul>
+              <li>
+                <a href="#"
+                  >Videx Aps <br />Hammerhusgade 15<br />2100 Kobenhavn</a
+                >
+              </li>
+              <li>
+                <a href="#">Tlf:(+45)3929 8000 <br />CVR:37087661</a>
+              </li>
+              <li><a href="#">skilte@videx.dk</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>INFORMATION</h4>
+            <ul>
+              <li><a href="#">Om os</a></li>
+              <li><a href="#">Leveringsinformation</a></li>
+              <li><a href="#">Privitlivspolitik</a></li>
+              <li><a href="#">Handelsbetingelser</a></li>
+              <li><a href="#">Kontakt os</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>SERVICES</h4>
+            <ul>
+              <li><a href="#">Returning</a></li>
+              <li><a href="#">Garanti</a></li>
+              <li><a href="#">Fortrydelssret</a></li>
+              <li><a href="#">Min Konto</a></li>
+              <li><a href="#">Orderhistorik</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+<script type="text/javascript" src="main.js"></script>
